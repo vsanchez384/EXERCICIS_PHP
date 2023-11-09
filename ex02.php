@@ -5,4 +5,4 @@
     $area = M_PI * pow($radi, 2);
     echo "L'àrea del cercle amb radi $radi és: $area";
     ?>
-    </html>
+</html>
