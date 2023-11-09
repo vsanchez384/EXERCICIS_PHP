@@ -2,19 +2,19 @@
 
 👇EXERCICIS ARRAYS UNIDIMENSIONALS👇
 
-Generar de forma aleatòria una array unidimensional de nombres de 10 posicions.
-Cercar el nombre màxim i el nombre mínim d’aquesta array. 
-Comptar quants d’elements té l’array.
-Sumar els elements d’una array. Calcular la mitjana dels elements d’una array.
-Tornar un string amb els elements d’una array separats per comes (ús funció implode)
-Ordenar un array de nombres de forma ascendent i de forma descendent. Mostrar els resultats dins d’un string.
-Mostrar la informació de l’array ordenada de l’exercici anterior dins d’una taula HTML.
-Cercar un element donat dins d’una array 
-Eliminar elements duplicats d’una array indexada.
-Imprimir quants números positius, negatius i zeros hi ha en l’array.
-Afegeix 2 elements al final de l’array.
-Elimina aquests 2 anteriors elements.
-Practica amb array_diff, array_intersect, array_merge. Per a tal crea dues array, una amb el nom dels alumnes que fan IFC31A i l’altre amb els nom dels alumnes que fan IFC31B. Si un alumne en duu de primer ha d’aparèixer a les dues llistes. 
+1 - Generar de forma aleatòria una array unidimensional de nombres de 10 posicions.
+2 - Cercar el nombre màxim i el nombre mínim d’aquesta array. 
+3 - Comptar quants d’elements té l’array.
+4 - Sumar els elements d’una array. Calcular la mitjana dels elements d’una array.
+5 - Tornar un string amb els elements d’una array separats per comes (ús funció implode)
+6 - Ordenar un array de nombres de forma ascendent i de forma descendent. Mostrar els resultats dins d’un string.
+7 - Mostrar la informació de l’array ordenada de l’exercici anterior dins d’una taula HTML.
+8 - Cercar un element donat dins d’una array 
+9 - Eliminar elements duplicats d’una array indexada.
+10 - Imprimir quants números positius, negatius i zeros hi ha en l’array.
+11 - Afegeix 2 elements al final de l’array.
+12 - Elimina aquests 2 anteriors elements.
+13 - Practica amb array_diff, array_intersect, array_merge. Per a tal crea dues array, una amb el nom dels alumnes que fan IFC31A i l’altre amb els nom dels alumnes que fan IFC31B. Si un alumne en duu de primer ha d’aparèixer a les dues llistes. 
 
 
 👇EXERCICIS ARRAYS MULTIDIMENSIONALS👇
