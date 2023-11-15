@@ -1,7 +1,7 @@
 <html>
     <?php
-    // EXERCICI 1
-    echo "<br>EXERCICI 1<br>" . "<br>";
+    // EXERCICI 1, 2 i 3
+    echo "<br>EXERCICI 1, 2 i 3<br>" . "<br>";
     $fruites = [
         'poma' => 9,
         'taronja' => 25,
@@ -15,10 +15,13 @@
         'maduixa' => 14
     ];
 
-    $fruites["mangos"] = 4;
+    // Afegeix o sustitueix el valor
+    $fruites["mangos"] = 10;
+    $fruites["kiwi"] = 33;
 
-    foreach($fruites as $clau => $valor){
-        echo $clau . ":" . $valor . "<br>";
+    // Mostra el stock de cada fruita
+    foreach($fruites as $clau => $stock){
+        echo $clau . ":" . $stock . "<br>";
     }
     ?>
 </html>

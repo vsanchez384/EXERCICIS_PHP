@@ -1,8 +1,9 @@
 <html>
     <?php
     // EXERCICI 2
-    foreach ($frutas as $fruta => $stock) {
-        echo $fruta . ': ' . $stock . '<br>';
+    // Mostra el stock de cada fruita
+    foreach($fruites as $clau => $stock){
+        echo $clau . ":" . $stock . "<br>";
     }
     ?>
 </html>
