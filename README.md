@@ -56,8 +56,8 @@ a - S’ha de fer una cerca que mostri per pantalla les dades del videojoc més 
 b - Implementar-ho mitjançant funcions
 
 10. Funcionalitat 9: Ordenació alfabètica de videojocs.
-a - Funció que tregui per pantalla els videojocs de forma ordenada i apart desi la informació dins d’un fitxer JSON_Resultat_ordenat_alfabetic.json
-b - Implementar-ho mitjançant funcions
+a. Funció que tregui per pantalla els videojocs de forma ordenada i apart desi la informació dins d’un fitxer JSON_Resultat_ordenat_alfabetic.json
+b. Implementar-ho mitjançant funcions
 
 =======================================
 
