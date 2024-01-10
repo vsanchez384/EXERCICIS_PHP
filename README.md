@@ -1,4 +1,4 @@
-# 
+# EXERCICIS POO
 
 1 - Crea una classe Persona que emmagatzemi les següents dades: nom, data de naixement, dni i gènere. Aquesta classe ha d’implementar:
 a) mètode saludar que mostrarà un missatge per pantalla de la següent manera: “Miquel (DNI - 04/08/1999 - gènere): Hola!”
