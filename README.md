@@ -6,4 +6,4 @@
 
 3 - Modifica l’exercici2 per tal d’afegir un camp tipus checkbox per triar les afcions de la persona. Per tant el processar_prova2.php ha de mostrar el nom , llinatges i la ciutat. 
 
-4 - Empra el mètode GET
+4 - Modifica l’exercici3 per tal d’afegir un camp tipus select per poder triar a quin centre integrat està matriculat l’alumne. Per tant, el processar_prova4.php ha de mostrar el nom, llimatges, ciutat, aficions, centre integrat.  Empra el mètode GET.
