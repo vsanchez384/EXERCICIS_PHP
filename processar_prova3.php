@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $nom = isset($_GET["nom"]) ? $_GET["nom"] : "";
-    $llinatge1 = isset($_GET["llinatge1"]) ? $_GET["llinatge1"] : "";
-    $llinatge2 = isset($_GET["llinatge2"]) ? $_GET["llinatge2"] : "";
-    $ciutat = isset($_GET["ciutat"]) ? $_GET["ciutat"] : "";
+    $llinatge1 = $_GET["llinatge1"];
+    $llinatge2 = $_GET["llinatge2"];
+    $ciutat = $_GET["ciutat"];
 
     echo "Nom: $nom<br>";
     echo "Llinatge 1: $llinatge1<br>";
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         echo "Aficions: " . implode(", ", $aficions) . "<br>";
     }
 
-    $centreIntegrat = isset($_GET["centreIntegrat"]) ? $_GET["centreIntegrat"] : "";
+    $centreIntegrat = $_GET["centreIntegrat"];
     echo "Centre Integrat: $centreIntegrat<br>";
 }
 ?>
