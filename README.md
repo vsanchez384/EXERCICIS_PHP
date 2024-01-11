@@ -1,21 +1,9 @@
-# EXERCICIS POO
+# EXERCICIS FORMULARIS BÀSICS
 
-1 - Crea una classe Persona que emmagatzemi les següents dades: nom, data de naixement, dni i gènere. Aquesta classe ha d’implementar:
+1 - Fes un formulari que introdueixis el nom, llinatg1, llinatge2. El formulari ha de cridar a un arxiu processar_prova1.php que ha de mostrar per pantalla els valors introduïts al formulari. Empra el mètode GET
 
-a) mètode saludar que mostrarà un missatge per pantalla de la següent manera: “Miquel (DNI - 04/08/1999 - gènere): Hola!”
+2 - Modifica l’exercici1 i afegeix un camp tipus radiobutton per triar la població en que viu una persona. Per tant el processar_prova2.php ha de mostrar el nom , llinatges i la ciutat. Empra el mètode GET
 
-b) mètode edat que calculi l’edat de la persona i ho mostri per pantalla
+3 - Modifica l’exercici2 per tal d’afegir un camp tipus checkbox per triar les afcions de la persona. Per tant el processar_prova2.php ha de mostrar el nom , llinatges i la ciutat. 
 
-2 - Crea una classe Calculadora que pugui realitzar operacions bàsiques sobre un o dos nombres (suma,  resta, divisió, multiplicació, potència i factorial). Crea una instància d’aquesta classe i realitza algunes operacions de prova.
-
-3 - Volem crear una petita tenda virtual de productes. Dissenya la tenda tenent en compte que d’un producte ens interessa emmagatzemar: nom, preu, stock. Afegeix una sèrie de productes a la tenda i realitza operacions de prova com ara:
-
-a) afegir un producte
-
-b) comprar un producte
-
-c) canviar el preu d’un producte
-
-d) aumentar el stock d’un producte
-
-e) imprimir l’estat actual de la tenda
+4 - Empra el mètode GET
