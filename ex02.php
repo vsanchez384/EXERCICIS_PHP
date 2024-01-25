@@ -2,7 +2,8 @@
 <?php
 include "dades_connexio.php";
 
-function test_input($data) {
+function test_input($data)
+{
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
@@ -20,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     try {
         $sql_insert = "INSERT INTO CLIENT (nom, llinatge1, llinatge2, email) VALUES ('$name', '$llinatge1', '$llinatge2', '$email')";
         $conn->exec($sql_insert);
-        
+
         echo "Nou registre creat amb èxit";
         $last_id = $conn->lastInsertId();
         echo " La darrera ID insertada és: " . $last_id;
