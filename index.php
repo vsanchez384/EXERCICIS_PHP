@@ -66,7 +66,6 @@ foreach ($arrayValues as $row) {
 // close the table
 echo "</table>\n";
 
-
 ?>
 
 </html>
