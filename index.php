@@ -13,11 +13,11 @@ try {
     )";
 
     $conn->exec($sql_create_table);
-    
+
     // Inserir valors a la taula CLIENT
     $sql_insert = "INSERT INTO CLIENT (nom, llinatge1, llinatge2, email) VALUES ('John', 'Doe', '', 'john@example.com')";
     $conn->exec($sql_insert);
-    
+
     echo "Base de dades i taula creades amb èxit. Nou registre inserit amb èxit.";
     $last_id = $conn->lastInsertId();
     echo " La darrera ID insertada és: " . $last_id;
@@ -27,4 +27,5 @@ try {
 
 $conn = null;
 ?>
+
 </html>
