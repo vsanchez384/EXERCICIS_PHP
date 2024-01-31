@@ -1,85 +1,106 @@
 <?php
-class Producte {
+
+class Producte
+{
     public $nom;
     public $preu;
     public $stock;
 
-    public function mostrarProducte() {
-        echo "Nom: {$this->nom} - Preu: {$this->preu} - Estoc: {$this->stock}<br>";
+    public function __construct($nom, $preu, $stock)
+    {
+        $this->nom = $nom;
+        $this->preu = $preu;
+        $this->stock = $stock;
     }
 }
 
-class Tenda {
+class TendaVirtual
+{
     public $productes = [];
 
-    public function afegirProducte($nom, $preu, $stock) {
-        $producte = new Producte();
-        $producte->nom = $nom;
-        $producte->preu = $preu;
-        $producte->stock = $stock;
-
+    // Mètode per afegir un producte a la tenda
+    public function afegirProducte($producte)
+    {
         $this->productes[] = $producte;
-        echo "Producte afegit: $nom<br>";
+        echo "Producte afegit a la tenda: {$producte->nom}<br>";
     }
 
-    public function comprarProducte($nomProducte, $quantitat) {
+    // Mètode per comprar un producte de la tenda
+    public function comprarProducte($nom, $quantitat)
+    {
         foreach ($this->productes as $producte) {
-            if ($producte->nom == $nomProducte) {
+            if ($producte->nom == $nom) {
                 if ($producte->stock >= $quantitat) {
                     $producte->stock -= $quantitat;
-                    echo "Compra realitzada: $quantitat unitats de {$producte->nom}<br>";
+                    $total = $producte->preu * $quantitat;
+                    echo "Compra realitzada: {$quantitat} unitats de {$producte->nom} ({$producte->preu}€) = {$total}€ <br>";
                 } else {
                     echo "No hi ha prou estoc de {$producte->nom}<br>";
                 }
                 return;
             }
         }
-        echo "Producte no trobat: $nomProducte<br>";
+        echo "Producte no trobat a la tenda<br>";
     }
 
-    public function canviarPreuProducte($nomProducte, $nouPreu) {
+    // Mètode per canviar el preu d'un producte de la tenda
+    public function canviarPreuProducte($nom, $nouPreu)
+    {
         foreach ($this->productes as $producte) {
-            if ($producte->nom == $nomProducte) {
+            if ($producte->nom == $nom) {
                 $producte->preu = $nouPreu;
-                echo "Preu de {$producte->nom} actualitzat a $nouPreu<br>";
+                echo "Preu del producte {$producte->nom} actualitzat a {$nouPreu}€<br>";
                 return;
             }
         }
-        echo "Producte no trobat: $nomProducte<br>";
+        echo "Producte no trobat a la tenda<br>";
     }
 
-    public function augmentarStockProducte($nomProducte, $quantitat) {
+    // Mètode per augmentar el stock d'un producte de la tenda
+    public function augmentarStockProducte($nom, $quantitat)
+    {
         foreach ($this->productes as $producte) {
-            if ($producte->nom == $nomProducte) {
+            if ($producte->nom == $nom) {
                 $producte->stock += $quantitat;
-                echo "Estoc de {$producte->nom} augmentat en $quantitat unitats<br>";
+                echo "Estoc del producte {$producte->nom} augmentat en {$quantitat}<br>";
                 return;
             }
         }
-        echo "Producte no trobat: $nomProducte<br>";
+        echo "Producte no trobat a la tenda<br>";
     }
 
-    public function imprimirEstatTenda() {
-        echo "Estat actual de la tenda:<br>";
-        foreach ($this->productes as $producte) {
-            $producte->mostrarProducte();
+    // Mètode per imprimir el stock actual de la tenda
+    public function imprimirStock()
+    {
+        echo "--------------------<br>";
+        if (!empty($this->productes)) {
+            foreach ($this->productes as $producte) {
+                echo "<b>{$producte->nom}</b>: {$producte->preu}€ (x{$producte->stock}) <br>";
+            }
+        } else {
+            echo "No hi ha productes a la tenda<br>";
         }
+        echo "--------------------<br>";
     }
 }
 
-// Crear una instància de la classe Tenda
-$tenda = new Tenda();
+// Creem alguns productes
+$producte1 = new Producte("Ordinador portàtil", 800, 10);
+$producte2 = new Producte("Telèfon intel·ligent", 500, 15);
 
-// Afegir alguns productes a la tenda
-$tenda->afegirProducte("Ordinador", 800, 10);
-$tenda->afegirProducte("Impressora", 150, 5);
-$tenda->afegirProducte("Ratolí", 20, 15);
+// Creem la tenda virtual
+$tenda = new TendaVirtual();
+$tenda->imprimirStock();
 
-// Realitzar algunes operacions de prova
-$tenda->comprarProducte("Ordinador", 2);
-$tenda->canviarPreuProducte("Impressora", 160);
-$tenda->augmentarStockProducte("Ratolí", 5);
+// Afegim productes a la tenda
+$tenda->afegirProducte($producte1);
+$tenda->afegirProducte($producte2);
+$tenda->imprimirStock();
 
-// Mostrar l'estat actual de la tenda
-$tenda->imprimirEstatTenda();
-?>
+// Realitzem operacions de prova
+$tenda->comprarProducte("Ordinador portàtil", 3);
+$tenda->imprimirStock();
+$tenda->canviarPreuProducte("Telèfon intel·ligent", 550);
+$tenda->imprimirStock();
+$tenda->augmentarStockProducte("Ordinador portàtil", 5);
+$tenda->imprimirStock();
