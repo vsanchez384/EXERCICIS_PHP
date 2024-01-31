@@ -1,9 +1,10 @@
 <html>
 <?php
 echo "<h1>EXERCICIS POO</h1>";
+echo "=============================";
 
 # EXERCICI 1
-echo "<br><h3>EXERCICI 1</h3>";
+echo "<h3>EXERCICI 1</h3>";
 class Persona
 {
     public $nom;
