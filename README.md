@@ -5,3 +5,5 @@
 
 # EXERCICIS_PHP (2ª Avaluació)
 - POO
+- Formularis bàsics
+- Bases de Dades
