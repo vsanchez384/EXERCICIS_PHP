@@ -1,9 +1,9 @@
 <html>
 <?php
-include "dades_connexio.php";
+include "connectar_bd.php";
 try {
     // sql to create table
-    $sql = "CREATE TABLE CLIENTS (
+    $sql = "CREATE TABLE CLIENT (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     firstname VARCHAR(30) NOT NULL,
     lastname VARCHAR(30) NOT NULL,

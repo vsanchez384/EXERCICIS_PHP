@@ -1,6 +1,6 @@
 <html>
 <?php
-include "dades_connexio.php";
+include "connectar_bd.php";
 
 try {
     // Crear la taula CLIENT si no existeix

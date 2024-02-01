@@ -1,6 +1,6 @@
 <html>
 <?php
-include "dades_connexio.php";
+include "connectar_bd.php";
 try {
     
     $sql = "INSERT INTO CLIENT (firstname, lastname, email)

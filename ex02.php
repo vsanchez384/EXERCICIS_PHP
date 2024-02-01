@@ -1,6 +1,8 @@
 <html>
 <?php
-include "dades_connexio.php";
+# EXERCICI 2
+echo "<h3>EXERCICI 2</h3><br>";
+include "connectar_bd.php";
 
 function test_input($data)
 {
